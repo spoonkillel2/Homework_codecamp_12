@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Kanit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10em;
+}
+
+a {
+  display: block;
+  width: 150px;
+  height: 20px;
+  line-height: 20px;
+  background: #000000;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: 300ms;
+  background: #ffffff;
+  color: #000000;
+}
+
+.tableFixHead {
+  overflow-y: auto;
+  height: 450px;
+}
+
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+table {
+  border-collapse: width 100%;
+}
+
+th,
+td {
+  padding: 8px 16px;
+}
+
+th {
+  background: #eee;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 40%;
+  padding: 20px;
+  height: 600px;
+  width: 400px;
+}
+
+.main img {
+  border-radius: 5px;
+}
+
+.main:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  text-align: center;
+  width: 50%;
+}
+
+.btn {
+  display: flex;
+  gap: 20px;
+}
+
+.skill {
+  display: flex;
+  gap: 35px;
+}
