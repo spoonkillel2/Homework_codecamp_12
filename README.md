@@ -1,2 +1,0 @@
-### Codecamp # 12
-- WICHAI WEDCHAYANON
