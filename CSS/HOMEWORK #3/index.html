@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Helvetica;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #F0F2F5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #dfdfdf;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            color: #1877F2;
+        }
+
+        #pContent1 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        #pContent2 {
+            font-size: 14px;
+            color: #1877F2;
+            text-align: center;
+        }
+
+        #pContent3 {
+            font-size: 16px;
+            color: black;
+            text-align: center;
+        }
+
+        #forgetPassword,
+        #pageCreate {
+            text-decoration: none;
+            color: #1877F2;
+        }
+
+        #pageCreate {
+            color: black;
+            font-size: 16px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type=submit]#submit {
+            width: 100%;
+            background-color: #1877F2;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        input[type=submit]#submit:hover{
+            background-color: #1864f2;
+        }
+
+
+        input[type=submit]#register {
+            width: 100%;
+            background-color: #42B72A;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        input[type=submit]#register:hover{
+            background-color: #3ca826;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        form {
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px 3px #9b9b9b;
+            margin-bottom: 10%;
+            padding: 3%;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                display: table;
+                padding: 50px;
+            }
+
+            form {
+                margin-top: 10%;
+            }
+
+            h1 {
+                font-size: 48px;
+                text-align: center;
+            }
+
+            #pContent1 {
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftContainer">
+            <h1>facebook</h1>
+            <p id="pContent1">Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัว</p>
+        </div>
+
+        <div class="rightContainer">
+            <form>
+                <input type="text" name="email" value="" placeholder="อีเมลหรือหมายเลขโทรศัพย์มือถือ">
+                <input type="password" name="password" value="" placeholder="รหัสผ่าน">
+                <input type="submit" id="submit" value="เข้าสู่ระบบ">
+                <br>
+                <a href="#">
+                    <p id="pContent2">ลืมรหัสผ่านใช่หรือไม่</p>
+                </a>
+                <hr>
+                <input type="submit" id="register" value="สร้างบัญชีใหม่">
+            </form>
+            <a href="#">
+                <p id="pContent3"><strong>สร้างเพจ</strong>
+                    สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</p>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
